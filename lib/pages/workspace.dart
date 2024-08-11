@@ -10,6 +10,8 @@ class Workspace extends StatefulWidget {
 class _WorkspaceState extends State<Workspace> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      backgroundColor: Colors.blue,
+    );
   }
 }
