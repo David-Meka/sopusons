@@ -10,22 +10,24 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.amber,
-        actions: <Widget>[
-          const Align(
-            alignment: Alignment.center,
-          ),
-          Center(
-            child: Container(
-              color: Colors.white,
-              height: 50,
-              width: 300,
-              child: Text('Search anything'),
-            ),
-          )
-        ],
+      body: Container(
+        height: height,
+        child: Column(
+          children: [
+            Container(
+              child: Stack(
+                children: [
+                  Container(
+                    color: Colors.blue,
+                    height: 250,
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

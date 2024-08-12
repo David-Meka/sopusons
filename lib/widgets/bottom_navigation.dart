@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:sopusons/pages/Profile_page.dart';
 import 'package:sopusons/pages/explore_screen.dart';
 import 'package:sopusons/pages/favourite_screen.dart';
 import 'package:sopusons/pages/home_page.dart';
@@ -19,19 +21,20 @@ class _BottomNavigationState extends State<BottomNavigation> {
     Workspace(),
     ExploreScreen(),
     FavouriteScreen(),
+    ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
+    double _height = MediaQuery.of(context).size.height;
+    double _width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.black26,
-      // bottom nav barr
-      bottomNavigationBar: Container(
-        color: Colors.black,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: 8,
-            horizontal: 15.0,
-          ),
+        // backgroundColor: Colors.black26,
+        // bottom nav barr
+        bottomNavigationBar: Container(
+          color: Colors.amber,
+          padding: const EdgeInsets.all(2),
+          height: 90,
+          width: _width,
           child: GNav(
             onTabChange: (index) {
               setState(() {
@@ -39,26 +42,30 @@ class _BottomNavigationState extends State<BottomNavigation> {
               });
             },
             backgroundColor: Colors.white,
-            color: Colors.white,
-            gap: 8,
-            activeColor: Colors.white,
+            color: const Color.fromARGB(172, 63, 60, 60),
+            gap: 5,
+            activeColor: Colors.blue,
             padding: const EdgeInsets.all(16.0),
-            tabBackgroundColor: Color.fromARGB(158, 38, 150, 224),
+            tabBackgroundColor: const Color.fromARGB(62, 38, 150, 224),
             tabs: const [
               GButton(
                 icon: Icons.home_rounded,
                 text: 'Home',
+                style: GnavStyle.google,
               ),
               GButton(
                 icon: Icons.workspaces_outline,
-                text: 'Workspace',
+                text: 'Catergory',
+                style: GnavStyle.google,
+                // textSize: ,
+                padding: EdgeInsets.all(15),
               ),
               GButton(
                 icon: Icons.explore_outlined,
                 text: 'Explore',
               ),
               GButton(
-                icon: Icons.workspaces_outline,
+                icon: Icons.favorite,
                 text: 'Favorite',
               ),
               GButton(
@@ -69,8 +76,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
             selectedIndex: _pageIndex,
           ),
         ),
-      ),
-      body: _pages[_pageIndex],
-    );
+        body: _pages[_pageIndex]);
   }
 }
