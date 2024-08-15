@@ -16,12 +16,12 @@ class BottomNavigation extends StatefulWidget {
 
 class _BottomNavigationState extends State<BottomNavigation> {
   int _pageIndex = 0;
-  final List<Widget> _pages = const [
-    HomePage(),
-    Workspace(),
+  final List<Widget> _pages = [
+    const HomePage(),
+    const Workspace(),
     ExploreScreen(),
-    FavouriteScreen(),
-    ProfilePage(),
+    const FavouriteScreen(),
+    const ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
         // backgroundColor: Colors.black26,
         // bottom nav barr
         bottomNavigationBar: Container(
-          color: Colors.amber,
+          // color: Colors.amber,
           padding: const EdgeInsets.all(2),
           height: 90,
           width: _width,
