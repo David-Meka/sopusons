@@ -53,51 +53,56 @@ class _HomePageState extends State<HomePage> {
                           Padding(
                             padding:
                                 const EdgeInsets.only(left: 16.0, right: 16.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  height: 49,
-                                  width: 240,
-                                  child: const Padding(
-                                    padding: EdgeInsets.all(8.0),
-                                    child: Row(
-                                      children: [
-                                        Text(
-                                          'Search Product Name',
-                                          style:
-                                              TextStyle(color: Colors.black12),
-                                        ),
-                                        Spacer(),
-                                        Icon(
-                                          Icons.search_rounded,
-                                          color:
-                                              Color.fromARGB(213, 15, 15, 15),
-                                          size: 30,
-                                        )
-                                      ],
+                            child: SizedBox(
+                              width: 340,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    height: 49,
+                                    width: 240,
+                                    child: const Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            'Search Product Name',
+                                            style: TextStyle(
+                                                color: Colors.black12),
+                                          ),
+                                          Spacer(),
+                                          Icon(
+                                            Icons.search_rounded,
+                                            color:
+                                                Color.fromARGB(213, 15, 15, 15),
+                                            size: 30,
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                ),
-                                const Padding(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 6)),
-                                const Icon(
-                                  Icons.notifications_active_outlined,
-                                  color: Colors.white,
-                                ),
-                                const Padding(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 6)),
-                                const Icon(
-                                  Icons.shopping_cart_outlined,
-                                  color: Colors.white,
-                                )
-                              ],
+                                  // const Padding(
+                                  //     padding:
+                                  //         EdgeInsets.symmetric(horizontal: 6)),
+                                  Spacer(),
+                                  const Icon(
+                                    Icons.notifications_active_outlined,
+                                    color: Colors.white,
+                                  ),
+                                  // const Padding(
+                                  //     padding:
+                                  //         EdgeInsets.symmetric(horizontal: 6)),
+                                  const Spacer(),
+                                  const Icon(
+                                    Icons.shopping_cart_outlined,
+                                    color: Colors.white,
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                           const SizedBox(
@@ -181,41 +186,41 @@ class _HomePageState extends State<HomePage> {
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 20),
                   ),
-                  const SingleChildScrollView(
+                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Padding(
-                      padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                       child: Row(
                         children: [
-                          ProductContainer(),
-                          SizedBox(
+                          ProductContainer('images/assets/wrist.png'),
+                         const  SizedBox(
                             width: 10,
                           ),
-                          ProductContainer(),
-                          SizedBox(
+                          ProductContainer('images/assets/phone3.png'),
+                          const SizedBox(
                             width: 10,
                           ),
-                          ProductContainer(),
+                          ProductContainer('images/assets/phone1.png'),
                         ],
                       ),
                     ),
                   ),
                   const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-                  const SingleChildScrollView(
+                  SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Padding(
-                      padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                       child: Row(
                         children: [
-                          ProductContainer(),
-                          SizedBox(
+                          ProductContainer('images/assets/headset.png'),
+                        const   SizedBox(
                             width: 10,
                           ),
-                          ProductContainer(),
-                          SizedBox(
+                          ProductContainer('images/assets/tv.png'),
+                         const  SizedBox(
                             width: 10,
                           ),
-                          ProductContainer(),
+                          ProductContainer('images/assets/iphone.png'),
                         ],
                       ),
                     ),
@@ -227,13 +232,67 @@ class _HomePageState extends State<HomePage> {
               ),
               //TODO change picture
               SizedBox(
-                child: Image.asset('images/slide/flash sales .png'),
+                child: Image.asset('images/slide/flash_sale1.png'),
               ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 10)),
               Container(
                 height: 70,
                 color: Colors.orange,
-              )
+              ),
+              const Padding(padding: EdgeInsets.symmetric(vertical: 20)),
+               SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                  child: Row(
+                    children: [
+                      ProductContainer('images/assets/phone 2.png'),
+                    
+                  const  SizedBox(
+                        width: 10,
+                      ),
+                      ProductContainer('images/assets/iphone.png'),
+                    const   SizedBox(
+                        width: 10,
+                      ),
+                      ProductContainer('images/assets/phone 2.png'),
+                    ],
+                  ),
+                ),
+              ),
+              const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
+               SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Padding(
+                  padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                  child: Row(
+                    children: [
+                      ProductContainer('images/assets/ps.png'),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      ProductContainer('images/assets/laptop.png'),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      ProductContainer('images/assets/tv.png'),
+                    ],
+                  ),
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 10),
+              ),
+              SizedBox(
+                child: Image.asset('images/slide/flash_sale3.png'),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10),
+              ),
+              Container(
+                height: 70,
+                color: Colors.blue,
+              ),
             ],
           ), //this is the main column
         ),

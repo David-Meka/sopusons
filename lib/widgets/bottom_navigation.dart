@@ -5,7 +5,7 @@ import 'package:sopusons/pages/Profile_page.dart';
 import 'package:sopusons/pages/explore_screen.dart';
 import 'package:sopusons/pages/favourite_screen.dart';
 import 'package:sopusons/pages/home_page.dart';
-import 'package:sopusons/pages/workspace.dart';
+import 'package:sopusons/pages/catergory_page.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -18,8 +18,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
   int _pageIndex = 0;
   final List<Widget> _pages = [
     const HomePage(),
-    const Workspace(),
-    ExploreScreen(),
+    const CategoryPage(),
+   const ExploreScreen(),
     const FavouriteScreen(),
     const ProfilePage(),
   ];
