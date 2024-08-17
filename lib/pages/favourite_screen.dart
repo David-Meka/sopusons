@@ -97,8 +97,19 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
                         )
                       ],
                     ),
-                    const Text('In stock'),
-                    Padding(padding: EdgeInsets.symmetric(vertical: 6)),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 16.0, right: 8),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'In stock',
+                            style: TextStyle(color: Colors.green),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const Padding(padding: EdgeInsets.symmetric(vertical: 6)),
                     Row(
                       children: [
                         Container(

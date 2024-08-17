@@ -16,6 +16,7 @@ class _CategoryPageState extends State<CategoryPage> {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: const Text('Categories'),
         centerTitle: true,
         leading: IconButton(
@@ -184,6 +185,7 @@ class _CategoryPageState extends State<CategoryPage> {
                         width: 10,
                       ),
                       ProductContainer('images/assets/wrist.png'),
+                      const Padding(padding: EdgeInsets.symmetric(vertical: 10))
                     ],
                   ),
                 ),
