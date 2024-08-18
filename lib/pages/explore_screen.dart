@@ -127,7 +127,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 child: Row(
                   children: [
                     Text(
-                      'Laptops',
+                      'Phone',
                       style: GoogleFonts.nunito(color: Colors.white),
                     ),
                     const Spacer(),

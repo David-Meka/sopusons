@@ -1,5 +1,6 @@
 // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sopusons/Cart/cart_screen.dart';
 import 'package:sopusons/pages/home_widgets/banner_slide.dart';
 import 'package:sopusons/widgets/categories_widget.dart';
 import 'package:sopusons/widgets/product_container.dart';
@@ -88,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                                   // const Padding(
                                   //     padding:
                                   //         EdgeInsets.symmetric(horizontal: 6)),
-                                  Spacer(),
+                                const  Spacer(),
                                   const Icon(
                                     Icons.notifications_active_outlined,
                                     color: Colors.white,
@@ -97,8 +98,16 @@ class _HomePageState extends State<HomePage> {
                                   //     padding:
                                   //         EdgeInsets.symmetric(horizontal: 6)),
                                   const Spacer(),
-                                  const Icon(
-                                    Icons.shopping_cart_outlined,
+                                  IconButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (ctx) => const CartScreen()));
+                                    },
+                                    icon: const Icon(
+                                      Icons.shopping_cart_outlined,
+                                    ),
                                     color: Colors.white,
                                   )
                                 ],
