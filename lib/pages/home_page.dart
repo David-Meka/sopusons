@@ -186,25 +186,7 @@ class _HomePageState extends State<HomePage> {
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 20),
                   ),
-                   SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-                      child: Row(
-                        children: [
-                          ProductContainer('images/assets/wrist.png'),
-                         const  SizedBox(
-                            width: 10,
-                          ),
-                          ProductContainer('images/assets/phone3.png'),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          ProductContainer('images/assets/phone1.png'),
-                        ],
-                      ),
-                    ),
-                  ),
+                  ProductRow(),
                   const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
@@ -213,11 +195,11 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         children: [
                           ProductContainer('images/assets/headset.png'),
-                        const   SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           ProductContainer('images/assets/tv.png'),
-                         const  SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           ProductContainer('images/assets/iphone.png'),
@@ -240,19 +222,18 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.orange,
               ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 20)),
-               SingleChildScrollView(
+              SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Padding(
                   padding: EdgeInsets.only(left: 10.0, right: 10.0),
                   child: Row(
                     children: [
                       ProductContainer('images/assets/phone 2.png'),
-                    
-                  const  SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       ProductContainer('images/assets/iphone.png'),
-                    const   SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       ProductContainer('images/assets/phone 2.png'),
@@ -261,7 +242,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-               SingleChildScrollView(
+              SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Padding(
                   padding: EdgeInsets.only(left: 10.0, right: 10.0),
@@ -295,6 +276,35 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ), //this is the main column
+        ),
+      ),
+    );
+  }
+}
+
+class ProductRow extends StatelessWidget {
+  const ProductRow({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Padding(
+        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+        child: Row(
+          children: [
+            ProductContainer('images/assets/wrist.png'),
+            const SizedBox(
+              width: 10,
+            ),
+            ProductContainer('images/assets/phone3.png'),
+            const SizedBox(
+              width: 10,
+            ),
+            ProductContainer('images/assets/phone1.png'),
+          ],
         ),
       ),
     );
