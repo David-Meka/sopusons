@@ -53,11 +53,11 @@ class _CartCardState extends State<CartCard> {
                   'images/assets/wrist.png',
                   width: 100,
                 ),
-                Spacer(),
+               const  Spacer(),
                 const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // TODO name of item collected from the api
+                    //TODO name of item collected from the api
                     Text('Apple Smartwatch Series 6'),
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 6),
