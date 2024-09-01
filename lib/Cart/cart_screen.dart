@@ -11,15 +11,23 @@ class CartScreen extends StatefulWidget {
 class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: const Text('Cart'),
         centerTitle: true,
       ),
       body: Container(
-        padding: EdgeInsets.only(left: 16.0, right: 16.0),
-        child: SingleChildScrollView(
-          child: const Column(
+        // color: Colors.blue,
+        width: width,
+        padding: const EdgeInsets.all(16),
+
+        // padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+        child: const SingleChildScrollView(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Padding(
@@ -35,6 +43,8 @@ class _CartScreenState extends State<CartScreen> {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10),
               ),
+              CartCard(),
+              Padding(padding: EdgeInsets.symmetric(vertical: 10)),
               CartCard(),
             ],
           ),

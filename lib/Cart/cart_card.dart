@@ -37,13 +37,13 @@ class _CartCardState extends State<CartCard> {
             color: Color.fromARGB(255, 194, 182, 182),
             spreadRadius: 2,
             blurRadius: 5,
-            offset: Offset(0.3, 3),
+            // offset: Offset(0.3, 3),
           ),
         ],
       ),
       padding: const EdgeInsets.all(16),
       height: 220,
-      width: 550,
+      width: 500,
       child: SingleChildScrollView(
         child: Column(
           children: [
@@ -53,7 +53,7 @@ class _CartCardState extends State<CartCard> {
                   'images/assets/wrist.png',
                   width: 100,
                 ),
-               const  Spacer(),
+                const Spacer(),
                 const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -120,7 +120,7 @@ class _CartCardState extends State<CartCard> {
                             onPressed: () {
                               _decreaseCartItemQunatity();
                             },
-                            icon: Icon(
+                            icon: const Icon(
                               size: 30,
                               Icons.remove_rounded,
                             ),
@@ -138,7 +138,7 @@ class _CartCardState extends State<CartCard> {
                       const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 8)),
                       Stack(
-                        alignment: Alignment(0.0, 0.0),
+                        alignment: const Alignment(0.0, 0.0),
                         children: [
                           Container(
                             height: 35,
@@ -152,7 +152,7 @@ class _CartCardState extends State<CartCard> {
                             onPressed: () {
                               _increaseCartItemQuantity();
                             },
-                            icon: Icon(
+                            icon: const Icon(
                               size: 30,
                               Icons.add_rounded,
                             ),

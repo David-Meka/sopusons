@@ -13,9 +13,13 @@ class FavouriteScreen extends StatefulWidget {
 class _FavouriteScreenState extends State<FavouriteScreen> {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: Colors.white,
       // backgroundColor: Colors.purple,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         leading: IconButton(
           onPressed: () {
             Navigator.push(
@@ -47,8 +51,9 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
       ),
       //TODO convert to reusable cantainer for the favourite section
       body: Container(
+        width: width,
         padding: const EdgeInsets.all(16),
-        child: Column(
+        child: const Column(
           children: <Widget>[
             FavoriteCard(),
             Padding(padding: EdgeInsets.symmetric(vertical: 10)),
@@ -92,7 +97,7 @@ class FavoriteCard extends StatelessWidget {
                   'images/assets/wrist.png',
                   width: 100,
                 ),
-                Spacer(),
+                const Spacer(),
                 const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
