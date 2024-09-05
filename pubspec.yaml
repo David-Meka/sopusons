@@ -67,6 +67,8 @@ flutter:
     - images/assets/
     - images/slide/
     - images/catergory_avatar/
+    - images/cart_images/
+    - images/payment/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

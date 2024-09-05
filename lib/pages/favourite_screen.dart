@@ -50,17 +50,23 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
         centerTitle: true,
       ),
       //TODO convert to reusable cantainer for the favourite section
-      body: Container(
-        width: width,
-        padding: const EdgeInsets.all(16),
-        child: const Column(
-          children: <Widget>[
-            FavoriteCard(),
-            Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-            FavoriteCard(),
-          ],
+      body: ListView(children: [
+        Container(
+          width: width,
+          padding: const EdgeInsets.all(16),
+          child: const Column(
+            children: <Widget>[
+              FavoriteCard(),
+              Padding(padding: EdgeInsets.symmetric(vertical: 10)),
+              FavoriteCard(),
+              Padding(padding: EdgeInsets.symmetric(vertical: 10)),
+              FavoriteCard(),
+              Padding(padding: EdgeInsets.symmetric(vertical: 10)),
+              FavoriteCard(),
+            ],
+          ),
         ),
-      ),
+      ]),
     );
   }
 }

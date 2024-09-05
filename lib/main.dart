@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sopusons/pages/category/widgets/choicechip_widget.dart';
 import 'package:sopusons/pages/home_page.dart';
 import 'package:sopusons/widgets/bottom_navigation.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         // darkTheme: ThemeData.dark(),
         debugShowCheckedModeBanner: false,
         home: BottomNavigation());

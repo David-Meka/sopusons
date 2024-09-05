@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sopusons/pages/category/widgets/choicechip_widget.dart';
 import 'package:sopusons/widgets/bottom_navigation.dart';
 import 'package:sopusons/widgets/product_container.dart';
 
@@ -49,23 +50,8 @@ class _CategoryPageState extends State<CategoryPage> {
         children: [
           //TODO learn to implement the category picker
 
-          Wrap(
-            children: [
-              FilterChip(
-                  avatar: Image.asset(
-                    'images/catergory_avatar/Vector (3).png',
-                    color: Colors.black,
-                  ),
-                  label: const Text('Laptop'),
-                  selected: isChecked,
-                  onSelected: (value) {
-                    setState(() {
-                      isChecked = value;
-                    });
-                  },
-                  deleteIcon: null)
-            ],
-          ),
+          //  ChoiceChipsScreen(),
+          
 
           // the catergories downward
           Container(
