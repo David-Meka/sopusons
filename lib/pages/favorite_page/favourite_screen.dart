@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sopusons/pages/home_page.dart';
-import 'package:sopusons/widgets/bottom_navigation.dart';
+import 'package:sopusons/pages/home_page/home_page.dart';
+import 'package:sopusons/bottom_navigation.dart';
 
 class FavouriteScreen extends StatefulWidget {
   const FavouriteScreen({super.key});

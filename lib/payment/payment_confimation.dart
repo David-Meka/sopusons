@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sopusons/Cart/cart_screen.dart';
-import 'package:sopusons/pages/home_page.dart';
-import 'package:sopusons/widgets/bottom_navigation.dart';
+import 'package:sopusons/pages/home_page/home_page.dart';
+import 'package:sopusons/bottom_navigation.dart';
 
 class PaymentConfimation extends StatelessWidget {
   @override
@@ -40,7 +40,7 @@ class PaymentConfimation extends StatelessWidget {
               'Payment Successful',
               style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             Card(
               color: Colors.white,
               elevation: 1,
@@ -60,7 +60,7 @@ class PaymentConfimation extends StatelessWidget {
                         'Delivery Address:', 'Oladimeji Street, Katampe...'),
                     buildInfoRow('Transaction ID:', 'GC12549302'),
                     buildInfoRow('Payment Date:', '04 December, 2023'),
-                    Divider(),
+                    const Divider(),
                     buildInfoRow('Total:', '₦ 900,700', isBold: true),
                   ],
                 ),

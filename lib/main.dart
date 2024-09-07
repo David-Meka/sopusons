@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sopusons/pages/category/widgets/choicechip_widget.dart';
-import 'package:sopusons/pages/home_page.dart';
-import 'package:sopusons/widgets/bottom_navigation.dart';
+import 'package:sopusons/payment/payment_failed.dart';
+
+import 'package:sopusons/bottom_navigation.dart';
 
 void main() {
   runApp(const MyApp());

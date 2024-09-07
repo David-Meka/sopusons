@@ -1,7 +1,7 @@
 // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sopusons/Cart/cart_screen.dart';
-import 'package:sopusons/pages/home_widgets/banner_slide.dart';
+import 'package:sopusons/pages/home_page/widget/banner_slide.dart';
 import 'package:sopusons/widgets/categories_widget.dart';
 import 'package:sopusons/widgets/product_container.dart';
 
@@ -195,7 +195,7 @@ class _HomePageState extends State<HomePage> {
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 20),
                   ),
-                  ProductRow(),
+               const   ProductRow(),
                   const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,

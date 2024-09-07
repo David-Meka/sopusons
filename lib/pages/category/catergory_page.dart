@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sopusons/pages/category/widgets/choicechip_widget.dart';
-import 'package:sopusons/widgets/bottom_navigation.dart';
+import 'package:sopusons/bottom_navigation.dart';
 import 'package:sopusons/widgets/product_container.dart';
 
 class CategoryPage extends StatefulWidget {

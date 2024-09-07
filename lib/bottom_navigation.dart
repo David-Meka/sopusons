@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:sopusons/pages/Profile_page.dart';
-import 'package:sopusons/pages/explore_screen.dart';
-import 'package:sopusons/pages/favourite_screen.dart';
-import 'package:sopusons/pages/home_page.dart';
+import 'package:sopusons/pages/profile_page/profile_page.dart';
+import 'package:sopusons/pages/explore_page/explore_screen.dart';
+import 'package:sopusons/pages/favorite_page/favourite_screen.dart';
+import 'package:sopusons/pages/home_page/home_page.dart';
 import 'package:sopusons/pages/category/catergory_page.dart';
 
 class BottomNavigation extends StatefulWidget {

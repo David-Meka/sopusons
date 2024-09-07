@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sopusons/Cart/cart_card.dart';
 import 'package:sopusons/Cart/cart_product_container.dart';
+import 'package:sopusons/bottom_navigation.dart';
 import 'package:sopusons/payment/payment_modal.dart';
-import 'package:sopusons/widgets/product_container.dart';
+// import 'package:sopusons/widgets/product_container.dart'; 
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
@@ -32,6 +33,11 @@ class _CartScreenState extends State<CartScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Navigator.push(context,
+              MaterialPageRoute(builder: (contex) => const BottomNavigation())),
+          icon: const Icon(Icons.arrow_back_ios_new),
+        ),
         backgroundColor: Colors.white,
         title: const Text('Cart'),
         centerTitle: true,

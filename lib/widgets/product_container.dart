@@ -50,7 +50,7 @@ class ProductContainer extends StatelessWidget {
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.symmetric(vertical: 1)),
+         const Padding(padding: EdgeInsets.symmetric(vertical: 1)),
           Container(
             decoration: BoxDecoration(
                 color: Colors.blue, borderRadius: BorderRadius.circular(10)),
