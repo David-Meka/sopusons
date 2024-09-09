@@ -86,15 +86,15 @@ class _CategoryPageState extends State<CategoryPage> {
               padding: const EdgeInsets.only(left: 10.0, right: 10.0),
               child: Row(
                 children: [
-                  ProductContainer('images/assets/iphone.png'),
+                  ProductContainer(pictureString: 'images/assets/iphone.png',productPrice: (300,000).toString(), productName: 'Iphone 11 pro',),
                   const SizedBox(
                     width: 10,
                   ),
-                  ProductContainer('images/assets/headset.png'),
+                  ProductContainer(pictureString: 'images/assets/headset.png', productPrice: '15,000', productName: 'JBL Ultra',),
                   const SizedBox(
                     width: 10,
                   ),
-                  ProductContainer('images/assets/tv.png'),
+                  ProductContainer(pictureString: 'images/assets/tv.png',productName: 'Sony Smart Tv',productPrice: '800,000',),
                 ],
               ),
             ),
@@ -136,15 +136,15 @@ class _CategoryPageState extends State<CategoryPage> {
               padding: const EdgeInsets.only(left: 10.0, right: 10.0),
               child: Row(
                 children: [
-                  ProductContainer('images/assets/phone3.png'),
+                  ProductContainer(pictureString: 'images/assets/phone3.png', productName: 'Redmi 14C',productPrice: '200,000' ,),
                   const SizedBox(
                     width: 10,
                   ),
-                  ProductContainer('images/assets/laptop.png'),
+                  ProductContainer(pictureString: 'images/assets/laptop.png', productPrice: '300,000',productName: 'HP Envy Probook',),
                   const SizedBox(
                     width: 10,
                   ),
-                  ProductContainer('images/assets/ps game.png'),
+                  ProductContainer(pictureString: 'images/assets/ps game.png', productName: 'Play Station 4',productPrice:'350,000' ,),
                 ],
               ),
             ),
@@ -184,15 +184,15 @@ class _CategoryPageState extends State<CategoryPage> {
               padding: const EdgeInsets.only(left: 10.0, right: 10.0),
               child: Row(
                 children: [
-                  ProductContainer('images/assets/phone1.png'),
+                 ProductContainer(pictureString: 'images/assets/phone3.png', productName: 'Tecno Spark 14',productPrice: '100,000' ,),
                   const SizedBox(
                     width: 10,
                   ),
-                  ProductContainer('images/assets/phone 2.png'),
+                  ProductContainer(pictureString: 'images/assets/laptop.png', productPrice: '200,000',productName: 'HP Probook',),
                   const SizedBox(
                     width: 10,
                   ),
-                  ProductContainer('images/assets/wrist.png'),
+                  ProductContainer(pictureString: 'images/assets/ps game.png', productName: 'Play Station 3',productPrice:'250,000' ,),
                   const Padding(padding: EdgeInsets.symmetric(vertical: 10))
                 ],
               ),

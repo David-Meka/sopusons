@@ -20,7 +20,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         elevation: null,
         title: const Text('Explore'),
         centerTitle: true,
@@ -64,7 +66,20 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 ),
               ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-              const CategoriesSlideWidget(),
+              const CategoriesSlideWidget(
+                image2:
+                    'images/catergory_avatar/product_Categories/Button Icon (1).png',
+                image:
+                    'images/catergory_avatar/product_Categories/Button Icon (2).png',
+                image3:
+                    'images/catergory_avatar/product_Categories/Button Icon (3).png',
+                image4:
+                    'images/catergory_avatar/product_Categories/Button Icon (4).png',
+                image5:
+                    'images/catergory_avatar/product_Categories/Button Icon (4).png',
+                image6:
+                    'images/catergory_avatar/product_Categories/Button Icon (5).png',
+              ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 10)),
               Container(
                 color: Colors.blue,
@@ -117,13 +132,26 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 ),
               ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-              const CategoriesSlideWidget(),
+              const CategoriesSlideWidget(
+                image2:
+                    'images/catergory_avatar/product_Categories/Button Icon.png',
+                image3:
+                    'images/catergory_avatar/product_Categories/Button Icon (5).png',
+                image4:
+                    'images/catergory_avatar/product_Categories/Button Icon (4).png',
+                image:
+                    'images/catergory_avatar/product_Categories/Button Icon (3).png',
+                image5:
+                    'images/catergory_avatar/product_Categories/Button Icon (2).png',
+                image6:
+                    'images/catergory_avatar/product_Categories/Button Icon (1).png',
+              ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 10)),
               Container(
                 color: const Color.fromARGB(255, 247, 25, 10),
                 height: 55,
-                padding:
-                    EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10.0),
+                padding: const EdgeInsets.only(
+                    left: 20, right: 20, top: 10, bottom: 10.0),
                 child: Row(
                   children: [
                     Text(

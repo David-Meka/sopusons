@@ -38,6 +38,7 @@ dependencies:
   google_nav_bar: ^5.0.6
   google_fonts: ^6.2.1
   carousel_slider: ^5.0.0
+  smooth_page_indicator: ^1.2.0+3
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +71,13 @@ flutter:
     - images/cart_images/
     - images/payment/
     - images/profile/
+    - images/catergory_avatar/catergory picker/
+    # - images/catergory_avatar/latop categories/
+    # - images/catergory_avatar/phone categories/
+    - images/catergory_avatar/product_Categories/
+    - images/product2_Category/
+    - images/splash_screen/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -20,7 +20,10 @@ class PaymentConfimation extends StatelessWidget {
               Navigator.of(context).pop();
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => CartScreen()),
+                MaterialPageRoute(
+                    builder: (context) => CartScreen(
+                          cart: [],
+                        )),
               );
             }),
       ),

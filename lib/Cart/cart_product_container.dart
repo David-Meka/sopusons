@@ -20,9 +20,10 @@ class CartProductContainer extends StatelessWidget {
       child: Column(
         children: [
           Container(
+            height: 150,
             child: Image.asset(
               pictureString,
-              height: 130,
+              height: 80,
               // fit: BoxFit.contain,
             ),
           ),

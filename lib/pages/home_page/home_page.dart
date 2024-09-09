@@ -13,11 +13,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  // final List<ProductContainer> cart = [];
+  final List<ProductContainer> selected = [
+    ProductContainer(pictureString: '', productName: '', productPrice: '')
+  ];
+
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Container(
         width: width,
         height: height,
@@ -89,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                                   // const Padding(
                                   //     padding:
                                   //         EdgeInsets.symmetric(horizontal: 6)),
-                                const  Spacer(),
+                                  const Spacer(),
                                   const Icon(
                                     Icons.notifications_active_outlined,
                                     color: Colors.white,
@@ -103,7 +109,10 @@ class _HomePageState extends State<HomePage> {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (ctx) => const CartScreen()));
+                                              builder: (ctx) =>
+                                                  const CartScreen(
+                                                    cart: [],
+                                                  )));
                                     },
                                     icon: const Icon(
                                       Icons.shopping_cart_outlined,
@@ -142,7 +151,14 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                  const CategoriesSlideWidget(),
+                  const CategoriesSlideWidget(
+                    image: 'images/product2_Category/Button Icon (6).png',
+                    image2: 'images/product2_Category/Button Icon (7).png',
+                    image3: 'images/product2_Category/Button Icon (8).png',
+                    image4: 'images/product2_Category/Button Icon (9).png',
+                    image5: 'images/product2_Category/Button Icon (10).png',
+                    image6: 'images/product2_Category/Button Icon (6).png',
+                  ),
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 10.0),
                   ),
@@ -195,7 +211,7 @@ class _HomePageState extends State<HomePage> {
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 20),
                   ),
-               const   ProductRow(),
+                  const ProductRow(),
                   const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
@@ -203,15 +219,27 @@ class _HomePageState extends State<HomePage> {
                       padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                       child: Row(
                         children: [
-                          ProductContainer('images/assets/headset.png'),
+                          ProductContainer(
+                            pictureString: 'images/assets/headset.png',
+                            productName: 'Smart Watch',
+                            productPrice: '15,000',
+                          ),
                           const SizedBox(
                             width: 10,
                           ),
-                          ProductContainer('images/assets/tv.png'),
+                          ProductContainer(
+                            pictureString: 'images/assets/tv.png',
+                            productName: 'SamsungTv',
+                            productPrice: '150,000',
+                          ),
                           const SizedBox(
                             width: 10,
                           ),
-                          ProductContainer('images/assets/iphone.png'),
+                          ProductContainer(
+                            pictureString: 'images/assets/iphone.png',
+                            productName: 'iphone 14',
+                            productPrice: '200,000',
+                          ),
                         ],
                       ),
                     ),
@@ -237,15 +265,27 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.only(left: 10.0, right: 10.0),
                   child: Row(
                     children: [
-                      ProductContainer('images/assets/phone 2.png'),
+                      ProductContainer(
+                        pictureString: 'images/assets/phone 2.png',
+                        productName: 'infinix 10C',
+                        productPrice: '90,000',
+                      ),
                       const SizedBox(
                         width: 10,
                       ),
-                      ProductContainer('images/assets/iphone.png'),
+                      ProductContainer(
+                        pictureString: 'images/assets/iphone.png',
+                        productName: 'iphoneX',
+                        productPrice: '100,000',
+                      ),
                       const SizedBox(
                         width: 10,
                       ),
-                      ProductContainer('images/assets/phone 2.png'),
+                      ProductContainer(
+                        pictureString: 'images/assets/phone 2.png',
+                        productName: 'Tecno Camon 20',
+                        productPrice: '200,000',
+                      ),
                     ],
                   ),
                 ),
@@ -257,15 +297,27 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.only(left: 10.0, right: 10.0),
                   child: Row(
                     children: [
-                      ProductContainer('images/assets/ps.png'),
+                      ProductContainer(
+                        pictureString: 'images/assets/ps.png',
+                        productName: 'Play Station 5',
+                        productPrice: '500,000',
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      ProductContainer('images/assets/laptop.png'),
+                      ProductContainer(
+                        pictureString: 'images/assets/laptop.png',
+                        productName: 'Dell latitude',
+                        productPrice: '250,000',
+                      ),
                       SizedBox(
                         width: 10,
                       ),
-                      ProductContainer('images/assets/tv.png'),
+                      ProductContainer(
+                        pictureString: 'images/assets/tv.png',
+                        productName: 'Android Tv',
+                        productPrice: '580,000',
+                      ),
                     ],
                   ),
                 ),
@@ -304,15 +356,27 @@ class ProductRow extends StatelessWidget {
         padding: const EdgeInsets.only(left: 10.0, right: 10.0),
         child: Row(
           children: [
-            ProductContainer('images/assets/wrist.png'),
-            const SizedBox(
+            ProductContainer(
+              pictureString: 'images/assets/ps.png',
+              productName: 'Play Station 5',
+              productPrice: '500,000',
+            ),
+            SizedBox(
               width: 10,
             ),
-            ProductContainer('images/assets/phone3.png'),
-            const SizedBox(
+            ProductContainer(
+              pictureString: 'images/assets/laptop.png',
+              productName: 'Dell latitude',
+              productPrice: '250,000',
+            ),
+            SizedBox(
               width: 10,
             ),
-            ProductContainer('images/assets/phone1.png'),
+            ProductContainer(
+              pictureString: 'images/assets/tv.png',
+              productName: 'Android Tv',
+              productPrice: '580,000',
+            ),
           ],
         ),
       ),
