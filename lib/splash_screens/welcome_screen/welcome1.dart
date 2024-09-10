@@ -16,7 +16,7 @@ class Welcome1 extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 130,
+              height: 110,
             ),
             Image.asset('images/splash_screen/Frame 45525.png'),
             const SizedBox(
@@ -24,32 +24,32 @@ class Welcome1 extends StatelessWidget {
             ),
             Image.asset('images/splash_screen/convenience.png'),
             SizedBox(
-              height: 90,
+              height: 110,
             ),
             Container(
               child: Stack(
                 children: [
                   Image.asset('images/assets/gadget background copy 2 (1).png'),
-                  Center(
-                    child: Container(
-                      margin: EdgeInsets.only(top: 150),
-                      width: 370,
-                      height: 60,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(12)),
-                      child: Center(
-                        child: Text(
-                          'Continue',
-                          style: GoogleFonts.nunito(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: const Color.fromARGB(255, 6, 94, 167),
-                          ),
-                        ),
-                      ),
-                    ),
-                  )
+                  // Center(
+                  //   child: Container(
+                  //     margin: EdgeInsets.only(top: 150),
+                  //     width: 370,
+                  //     height: 60,
+                  //     decoration: BoxDecoration(
+                  //         color: Colors.white,
+                  //         borderRadius: BorderRadius.circular(12)),
+                  //     child: Center(
+                  //       child: Text(
+                  //         'Continue',
+                  //         style: GoogleFonts.nunito(
+                  //           fontSize: 18,
+                  //           fontWeight: FontWeight.bold,
+                  //           color: const Color.fromARGB(255, 6, 94, 167),
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ),
+                  // )
                 ],
               ),
             )
